@@ -1,0 +1,12 @@
+<header class="navbar_top">
+  <div class="navbar_container">
+    <nav>
+      <ul class="navbar-right">
+        <% if user_signed_in? %>
+            <li><span class="navbar-text"><%= current_user.email %></span></li>
+            <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
+</header>
