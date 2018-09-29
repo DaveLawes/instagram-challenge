@@ -1,10 +1,8 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/app/controllers/pages_controller.rb": [
+      "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/app/controllers/likes_controller.rb": [
         1,
-        1,
-        null,
         null
       ],
       "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/app/controllers/application_controller.rb": [
@@ -12,6 +10,26 @@
         1,
         1,
         10,
+        null,
+        null
+      ],
+      "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/spec/controllers/pages_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/app/controllers/pages_controller.rb": [
+        1,
+        1,
         null,
         null
       ],
@@ -233,6 +251,20 @@
         null,
         null
       ],
+      "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/spec/helpers/likes_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/spec/helpers/posts_helper_spec.rb": [
         1,
         null,
@@ -248,6 +280,32 @@
         null,
         null,
         null,
+        null
+      ],
+      "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/spec/models/like_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/app/models/like.rb": [
+        1,
+        1,
+        1,
         null
       ],
       "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/spec/models/post_spec.rb": [
@@ -281,9 +339,10 @@
         1,
         1,
         1,
+        1,
         null
       ]
     },
-    "timestamp": 1538231741
+    "timestamp": 1538232098
   }
 }
