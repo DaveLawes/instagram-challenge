@@ -1,12 +1,11 @@
 <header class="navbar_top">
-  <div class="navbar_container">
     <nav>
-      <ul class="navbar-right">
         <% if user_signed_in? %>
-            <li><span class="navbar-text"><%= current_user.email %></span></li>
-            <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+            <div class="navbar_right">
+              <%= link_to "Your photos", user_posts_path( current_user.id ) %>
+              <span class="navbar-text"><%= current_user.handle %></span>
+              <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+            </div>
         <% end %>
-      </ul>
     </nav>
-  </div>
 </header>

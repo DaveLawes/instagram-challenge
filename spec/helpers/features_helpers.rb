@@ -14,3 +14,11 @@ def seed_test_database
   post = Post.create({title: 'bohinj', user_id: user.id})
   post.image.attach(io: File.open(path), filename: name)
 end
+
+def seed_test_database_with_another_user_and_posts
+  user = User.create({email: 'testing2@rspec.com', password: '123456'})
+  name = 'IMG_20180728_111546_075.jpg'
+  path = "#{Rails.root}/public/images/#{name}"
+  post = Post.create({title: 'river', user_id: user.id})
+  post.image.attach(io: File.open(path), filename: name)
+end
