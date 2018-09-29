@@ -7,6 +7,6 @@ class User < ApplicationRecord
   has_many :posts
 
   def handle
-    self.email.split('@')[0]
+    self.email.split("@")[0]
   end
 end
