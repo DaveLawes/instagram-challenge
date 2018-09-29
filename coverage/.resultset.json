@@ -11,7 +11,7 @@
         1,
         1,
         1,
-        6,
+        7,
         null,
         null
       ],
@@ -25,23 +25,63 @@
       "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/app/controllers/posts_controller.rb": [
         1,
         1,
-        7,
+        10,
         null,
         null,
         1,
-        0,
-        null,
-        null,
         1,
-        0,
-        0,
+        1,
         null,
         null,
         1,
         null,
         1,
-        0,
+        1,
+        1,
         null,
+        null
+      ],
+      "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/spec/features/user_can_post_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/spec/helpers/features_helpers.rb": [
+        1,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null
       ],
       "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/spec/features/user_can_sign_out_spec.rb": [
@@ -59,24 +99,6 @@
         1,
         null,
         null,
-        null
-      ],
-      "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/spec/helpers/features_helpers.rb": [
-        1,
-        4,
-        4,
-        4,
-        4,
-        4,
-        4,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         null
       ],
       "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/spec/features/user_can_sign_up_spec.rb": [
@@ -191,6 +213,6 @@
         null
       ]
     },
-    "timestamp": 1538221824
+    "timestamp": 1538225332
   }
 }

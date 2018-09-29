@@ -3,10 +3,6 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
-  def new
-    @post = Post.new
-  end
-
   def create
     post = Post.create(message_params)
     redirect_to posts_url
@@ -15,6 +11,7 @@ class PostsController < ApplicationController
   private
 
   def message_params
-    params.require(:post).permit(:title, :content, images[])
+    params[:post][:user_id] = current_user.id unless current_user == nil
+    params.require(:post).permit(:title, :content, :image, :user_id)
   end
 end
