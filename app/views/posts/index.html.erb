@@ -9,5 +9,5 @@ Here are all the photos!
       <%= 'Like' %>
     <% end %>
     <!-- <button type="button" class="like_<%= current_user.id %>">Like</button> -->
-    <p class="like_value_<%= current_user.id%>"><%=post.likes.count%></p>
+    <p class="like_value_<%= post.id%>"><%=post.likes.count%></p>
 <% end %>
