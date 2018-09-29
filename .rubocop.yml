@@ -8,6 +8,9 @@ AllCops:
     - '**/vendor/**/*'
     - 'actionpack/lib/action_dispatch/journey/parser.rb'
     - 'railties/test/fixtures/tmp/**/*'
+    - '**/bin/**'
+    - '**/config.ru'
+    - '**/Rakefile'
 
 Performance:
   Exclude:
@@ -55,7 +58,7 @@ Layout/EndAlignment:
   AutoCorrect: true
 
 Layout/EmptyLineAfterMagicComment:
-  Enabled: true
+  Enabled: false
 
 Layout/EmptyLinesAroundBlockBody:
   Enabled: true
