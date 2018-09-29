@@ -3,6 +3,8 @@ Here are all the photos!
 <%= render "form" %>
 
 <% @posts.each do | post | %>
-  <p><%= post.title %></p>
-  <%= image_tag(post.image) %>
+    <p><%= post.title %></p>
+    <%= image_tag(post.image) %>
+    <button type="button" class="like_<%= current_user.id %>">Like</button>
+    <p class="like_value_<%= current_user.id%>">1</p>
 <% end %>
