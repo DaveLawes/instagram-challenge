@@ -3,6 +3,14 @@
     "coverage": {
       "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/app/controllers/likes_controller.rb": [
         1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
         null
       ],
       "/Users/davidlawes/Projects/weekend_challenges/instagram-challenge/instagram/app/controllers/application_controller.rb": [
@@ -209,8 +217,8 @@
         1,
         1,
         1,
-        1,
-        1,
+        0,
+        0,
         null,
         null,
         null
@@ -343,6 +351,6 @@
         null
       ]
     },
-    "timestamp": 1538232098
+    "timestamp": 1538232851
   }
 }
