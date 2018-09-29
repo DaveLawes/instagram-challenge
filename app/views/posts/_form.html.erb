@@ -1,8 +1,7 @@
 <% if user_signed_in? %>
   <%= form_for Post.new do |form| %>
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, placeholder: 'photo title' %>
     <%= form.file_field :image %>
-    <%= form.submit "Post" %>
+    <%= form.submit "Post", id: 'form_submit' %>
   <% end %>
 <% end %>

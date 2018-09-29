@@ -1,17 +1,5 @@
-Here are all the photos!
+<h2>Instagram</h2>
 
 <%= render "form" %>
 
-<% @posts.each do | post | %>
-  <p><%= post.title %></p>
-    <%= image_tag(post.image) %>
-    <% liked = Like.find_by(post_id: post.id, user_id: current_user.id) %>
-    <%= link_to post_likes_path(post), method: :post do %>
-      <% if !liked %>
-        <%= 'Like' %>
-      <% else %>
-        <%= 'Unlike' %>
-      <% end %>
-    <% end %>
-  <p class="like_value_<%= post.id%>"><%=post.likes.count%></p>
-<% end %>
+<%= render "all_posts" %>

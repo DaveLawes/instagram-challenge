@@ -1,6 +1,3 @@
-<h2>Here are all your photos <%= %></h2>
+<h3>Here are all your photos <%= %></h3>
 
-<% @posts.each do | post | %>
-  <%= post.title %>
-  <%= image_tag(post.image) %>
-<% end %>
+<%= render "all_posts" %>

@@ -1,8 +1,32 @@
 .navbar_top {
+  width: 100%;
+  background-color: white;
   padding-top: 0.8em;
   padding-bottom: 0.8em;
+  border-bottom: 1px solid #E6E6E6;
+  height: 2.4em;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar_left {
+  padding-left: 0.8em;
 }
 
 .navbar_right {
+  padding-right: 0.8em;
+}
 
+a.nav_link {
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+span.navbar_text {
+  padding-right: 0.6em;
 }

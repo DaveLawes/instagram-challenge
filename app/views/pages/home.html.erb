@@ -1,12 +1,15 @@
-Welcome to Instagram
+<h1>Oh hi there, welcome to Instagram!</h1>
 
-<ul>
-  <li><%= link_to new_user_registration_path do%>
-      sign up
-    <% end %>
-  </li>
-  <li><%= link_to new_user_session_path do%>
-      sign in
-    <% end %>
-  </li>
-</ul>
+<h2>Do you want to:</h2>
+<div class="homepage_container">
+  <ul>
+    <li><%= link_to new_user_registration_path do%>
+        <p class="link_list">sign up</p>
+      <% end %>
+    </li>
+    <li><%= link_to new_user_session_path do%>
+        <p class="link_list">sign in</p>
+      <% end %>
+    </li>
+  </ul>
+</div>

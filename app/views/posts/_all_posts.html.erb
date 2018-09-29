@@ -1,0 +1,17 @@
+<div class="posts_flexbox">
+  <% @posts.each do | post | %>
+    <div class="post_container">
+      <%= image_tag(post.image, class: "post_image") %>
+      <p class="post_title"><%= post.title %></p>
+      <% liked = Like.find_by(post_id: post.id, user_id: current_user.id) %>
+      <%= link_to post_likes_path(post), method: :post, class: "link_to_like" do %>
+        <% if !liked %>
+          <%= 'Like' %>
+        <% else %>
+          <%= 'Unlike' %>
+        <% end %>
+      <% end %>
+      <p id="number_likes" class="like_value_<%= post.id%>"><%=post.likes.count%></p>
+    </div>
+  <% end %>
+</div>

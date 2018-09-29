@@ -1,0 +1,20 @@
+.homepage_container {
+  margin: auto;
+  width: 40%;
+  text-align: center;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  width: 100%;
+  list-style-type: none;
+}
+
+.link_list {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}

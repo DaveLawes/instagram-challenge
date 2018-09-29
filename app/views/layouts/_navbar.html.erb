@@ -1,12 +1,13 @@
-<header class="navbar_top">
-    <nav>
-        <% if user_signed_in? %>
-            <div class="navbar_right">
-              <%= link_to "All photos", posts_path %>
-              <%= link_to "Your photos", user_posts_path( current_user.id ) %>
-              <span class="navbar-text"><%= current_user.handle %></span>
-              <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-            </div>
-        <% end %>
-    </nav>
-</header>
+<div class="navbar_top">
+  <% if user_signed_in? %>
+    <div class="navbar_left">
+      <%= link_to "All Photos", posts_path, :class => "nav_link" %>
+      <%= link_to "Your Photos", user_posts_path( current_user.id ), :class => "nav_link"%>
+    </div>
+
+    <div class="navbar_right">
+      <span class="navbar_text"><%= current_user.handle %></span>
+      <%= link_to "Sign out", destroy_user_session_path, :method => :delete, :class => "nav_link" %>
+    </div>
+  <% end %>
+</div>
