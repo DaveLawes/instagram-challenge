@@ -50,16 +50,31 @@ I'd like to be able to comment on a photo
 
 ## Classes
 
-- Users (devise)
-- Photos (Active Storage)
-- Likes
-- Comments
+| User |
+|-----|
+| has unique email
+| has password
+| has many posts
+| has many likes (only 1 like per post)
+| has many comments
 
-## Tickets (in priority order)
+| Post |
+|-----|
+| has user_id
+| has associated image file
+| has many likes
+| has many comments
 
-- Rails setup: feature test basic routes (1)
-- DB setup with Devise gem: user can sign up (2)
-- DB setup for other classes (2)
-- DB setup for Active Storage (3)
-- Feature test: signed up user can see all photos (2)
-- Feature test: log out feature prevents photos from
+| Likes (join) |
+|----|
+| has user_id
+| has post_id
+
+| Comments |
+|-----|
+| has text
+| has user_id
+| has post_id
+
+
+
