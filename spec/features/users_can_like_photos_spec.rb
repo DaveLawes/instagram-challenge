@@ -19,4 +19,13 @@ RSpec.feature 'Likes', type: :feature do
     page.find("p.like_value_#{post_id}", text: '1')
   end
 
+  scenario 'A user can like a photo only once' do
+    sign_up
+    seed_test_database
+    post_id = Post.find_by(title: 'bohinj').id
+    visit current_path
+    find("a[href='/posts/#{post_id}/likes']").click
+    find("a[href='/posts/#{post_id}/likes']").click
+    page.find("p.like_value_#{post_id}", text: '0')
+  end
 end

@@ -3,11 +3,15 @@ Here are all the photos!
 <%= render "form" %>
 
 <% @posts.each do | post | %>
-    <p><%= post.title %></p>
+  <p><%= post.title %></p>
     <%= image_tag(post.image) %>
-    <%= link_to post_likes_path( post ), method: :post do %>
-      <%= 'Like' %>
+    <% liked = Like.find_by(post_id: post.id, user_id: current_user.id) %>
+    <%= link_to post_likes_path(post), method: :post do %>
+      <% if !liked %>
+        <%= 'Like' %>
+      <% else %>
+        <%= 'Unlike' %>
+      <% end %>
     <% end %>
-    <!-- <button type="button" class="like_<%= current_user.id %>">Like</button> -->
-    <p class="like_value_<%= post.id%>"><%=post.likes.count%></p>
+  <p class="like_value_<%= post.id%>"><%=post.likes.count%></p>
 <% end %>
