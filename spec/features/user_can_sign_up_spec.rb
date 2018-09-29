@@ -1,5 +1,5 @@
 require 'rails_helper'
-require 'helpers/user_sign_up'
+require 'helpers/features_helpers'
 
 RSpec.feature 'Sign Up', type: :feature do
 

@@ -1,1 +1,7 @@
 Here are all the photos!
+
+<% @posts.each do | post | %>
+  <p><%= post.title %></p>
+  photo:
+  <%= image_tag(post.image) %>
+<% end %>
