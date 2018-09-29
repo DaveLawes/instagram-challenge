@@ -15,4 +15,13 @@ RSpec.feature 'Own posts', type: :feature do
     expect(page).to_not have_css("img[src*='IMG_20180728_111546_075.jpg']")
   end
 
+  scenario 'After seeing their own photos a user can get back to posts#index' do
+    sign_up
+    seed_test_database
+    click_link 'Your photos'
+    click_link 'All photos'
+    expect(URI.parse(current_url).path).to eq '/posts'
+  end
+
+
 end

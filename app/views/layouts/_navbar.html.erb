@@ -2,6 +2,7 @@
     <nav>
         <% if user_signed_in? %>
             <div class="navbar_right">
+              <%= link_to "All photos", posts_path %>
               <%= link_to "Your photos", user_posts_path( current_user.id ) %>
               <span class="navbar-text"><%= current_user.handle %></span>
               <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
