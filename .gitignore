@@ -12,14 +12,14 @@
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
+*/log/*
+*/tmp/*
+**/log/.keep
+**/tmp/.keep
 
 # Ignore uploaded files in development
-/storage/*
-!/storage/.keep
+*/storage/*
+**/storage/.keep
 
 /node_modules
 /yarn-error.log
