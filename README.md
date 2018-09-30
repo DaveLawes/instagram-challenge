@@ -54,6 +54,7 @@ The following diagram documents my intention for how the user will navigate thro
 
 <img src='docs/instagram_user_flow.png'>
 
+
 ### Models
 
 Models were defined to document what information was required by each class, and the relationships between the classes. The models were subsequently built using Active Record.
@@ -122,7 +123,9 @@ To run the suite of tests run `rspec`. Tests were broken down in the following w
 
 This gif shows the basic user flow through the app:
 
-![]('./public/instagram_walkthrough.gif')
+<p align="center">
+<img src=https://github.com/DaveLawes/instagram-challenge/blob/master/public/instagram_walkthrough.gif>
+</p>
 
 
 ## Areas of Improvement
