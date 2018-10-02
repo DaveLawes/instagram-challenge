@@ -10,7 +10,7 @@ class LikesController < ApplicationController
       else
         liked.destroy
       end
-      
+
     end
     redirect_to posts_path
   end

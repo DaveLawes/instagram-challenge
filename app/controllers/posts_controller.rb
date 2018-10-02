@@ -10,7 +10,6 @@ class PostsController < ApplicationController
   end
 
   def user
-    user = User.find( current_user.id )
     @posts = Post.where(user_id: current_user.id).order(created_at: :desc)
   end
 
